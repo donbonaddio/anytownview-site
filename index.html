@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anytownview — a window onto a city, coming soon</title>
+<meta name="description" content="Anytownview for iPhone and iPad shows one live public view of a city at a time, like a window onto the street. Coming soon.">
+<meta property="og:title" content="Anytownview — coming soon">
+<meta property="og:description" content="One live public view of a city at a time, like a window onto the street. Coming soon to iPhone and iPad.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#ff8a5c">
+<link rel="icon" href="icon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<style>
+  :root {
+    --sky-top: #ff6f5b; --sky-mid: #ffa45e; --sky-low: #ffe7b3;
+    --ink: #2a1f38; --muted: #5e4658; --accent: #c4566a; --chip: rgba(255,255,255,0.55); --line: rgba(42,31,56,0.12);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --sky-top: #2a1f38; --sky-mid: #43304f; --sky-low: #6b3f55;
+      --ink: #fff3d0; --muted: #e8c9b8; --accent: #ffb27a; --chip: rgba(255,255,255,0.08); --line: rgba(255,243,208,0.16);
+    }
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { height: 100%; }
+  body {
+    min-height: 100%;
+    background: linear-gradient(180deg, var(--sky-top) 0%, var(--sky-mid) 50%, var(--sky-low) 100%) fixed;
+    background-color: var(--sky-mid);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui, sans-serif;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    text-align: center; padding: 2rem 16px;
+  }
+  .icon { width: 128px; height: 128px; border-radius: 29px; box-shadow: 0 20px 50px rgba(42,31,56,0.28), 0 0 0 1px var(--line); margin-bottom: 2.2rem; }
+  h1 { font-size: clamp(2.6rem, 12vw, 5.2rem); font-weight: 800; letter-spacing: -0.025em; line-height: 1; }
+  .tagline { margin-top: 1.1rem; font-size: clamp(1.1rem, 4.5vw, 1.45rem); font-weight: 500; color: var(--muted); max-width: 30ch; line-height: 1.4; }
+  .features { margin-top: 2rem; list-style: none; display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem; max-width: 34rem; }
+  .features li { padding: 0.45rem 0.95rem; border-radius: 999px; background: var(--chip); box-shadow: 0 0 0 1px var(--line); font-size: 0.95rem; font-weight: 600; }
+  .badge { margin-top: 2.2rem; display: inline-block; padding: 0.6rem 1.3rem; border: 1.5px solid var(--ink); border-radius: 999px; font-weight: 700; font-size: 0.95rem; letter-spacing: 0.05em; text-transform: uppercase; }
+  .contact { margin-top: 2.4rem; max-width: 34ch; font-size: 1rem; color: var(--muted); line-height: 1.5; }
+  .contact a { color: var(--ink); font-weight: 600; text-decoration: none; border-bottom: 1px solid var(--line); }
+  .contact a:hover { border-bottom-color: var(--ink); }
+  footer { margin-top: 2rem; font-size: 0.85rem; color: var(--muted); }
+  footer a { color: var(--muted); text-decoration: none; }
+  footer a:hover { color: var(--ink); }
+</style>
+</head>
+<body>
+  <img class="icon" src="icon.png" alt="">
+  <h1>Anytownview</h1>
+  <p class="tagline">A window onto a city. One live public view at a time, changing every minute or so.</p>
+  <ul class="features" aria-label="Features">
+    <li>Live street views</li>
+    <li>Local time &amp; weather</li>
+    <li>Sunrise to night</li>
+    <li>iPhone &amp; iPad</li>
+  </ul>
+  <span class="badge">Coming soon</span>
+  <p class="contact">Questions or a city you&rsquo;d like to see? Email <a href="mailto:don@donstech.com?subject=Anytownview">don@donstech.com</a>.</p>
+  <footer>A <a href="https://donstech.com">donstech</a> app</footer>
+</body>
+</html>
